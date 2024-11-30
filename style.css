@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "New Rocker", system-ui;
+}
+
+body {
+    background-image: url(res/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form button {
+    background: 0;
+    border: 0;
+}
+
+form button img {
+    width: 24px;
+}
+
+#title {
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px black;
+}
+
+#timer {
+    text-align: center;
+    width: 1000px;
+    height: 170px;
+
+
+}
+
+#timer p {
+    position: relative;
+    top: 20%;
+    margin: 0;
+}
+
+#timer #alarmsDisplay {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px black;
+    display: none;
+}
+
+
+
+#time {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+}
+
+#alarm {
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    font-size: 20px;
+}
+
+.alarm-time {
+    position: relative;
+    top: 0px;
+    margin-bottom: 10px;
+}
+
+.alarm-sounds {
+    position: relative;
+    top: 30px;
+    font-size: 23px;
+}
+
+.alarm-time p {
+    font-size: 24px;
+    color: #0654c9;
+}
+
+.alarm-sounds p {
+    font-size: 24px;
+    color: #0654c9;
+}
+
+#add-alarm {
+    position: relative;
+    top: 40px;
+}
+
+.app {
+        width: 1000px;
+        height: 600px;
+        position: relative;
+        top: 110px;
+        margin: auto;
+        background-image: url(res/app-bg.jpg);
+        background-size: 1000px 600px;
+
+}
+
+.frame {
+    width: 1000px; 
+    height: 600px; 
+    position: absolute;
+    top: 147px;
+    left: 48.7%; 
+    transform: translateX(-50%);
+    z-index: 1; 
+    pointer-events: none;
+}
+
+p {
+    font-size: 20px;
+
+}
+
+#errors {
+    color: red;
+    text-shadow: 2px 2px 3px black;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+#stop-alarm {
+    display: none;
+
+    justify-content: center;
+
+}
+
+#stop-alarm img:hover {
+    filter: brightness(50%);
+}
+

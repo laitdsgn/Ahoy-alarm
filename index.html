@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahoy Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="title"> &#128128; Ahoy Alarm &#128128;</h1>
+
+
+        <div class="frame">
+            <img src="res/frame.png" alt="">
+        </div>
+        <div class="app">
+
+            <div id="timer">
+                <p id="time"></p>
+                <p id="alarmsDisplay"></p>
+                <p id="errors"></p>
+
+            </div>
+
+
+            <div id="alarm">
+                <div class="alarm-time">
+                    <p>set alarm time: </p>
+                    <input type="time" name="setTime" id="setTime" step="1">
+
+                </div>
+
+                <div class="alarm-sounds" id="alarm-sounds">
+                    <p>set alarm sound: </p>
+
+                    <form id="select-sound">
+
+                        <div>
+                            <label>
+                                <input type="radio" name="sound" value="Cholerny Sztorm" checked="checked">
+                                Cholerny Sztorm
+                                <button type="button" class="play-sound" data-sound="Cholerny Sztorm" ><img src="res/play-button.png" alt="play"></button>
+                                <button type="button" class="stop-sound" data-sound="Cholerny Sztorm"><img src="res/stop-button.png" alt="stop"></button>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="sound" value="Bitwa">
+                                Bitwa
+                                <button type="button" class="play-sound" data-sound="Bitwa"><img src="res/play-button.png" alt="play"></button>
+                                <button type="button" class="stop-sound" data-sound="Bitwa"><img src="res/stop-button.png" alt="stop"></button>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="sound" value="Wellerman">
+                                Wellerman
+                                <button type="button" class="play-sound" data-sound="Wellerman"><img src="res/play-button.png" alt="play"></button>
+                                <button type="button" class="stop-sound" data-sound="Wellerman"><img src="res/stop-button.png" alt="stop"></button>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="sound" value="Drunken Sailer">
+                                Drunken Sailer
+                                <button type="button" class="play-sound" data-sound="Drunken Sailer"><img src="res/play-button.png" alt="play"></button>
+                                <button type="button" class="stop-sound" data-sound="Drunken Sailer"><img src="res/stop-button.png" alt="stop"></button>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="sound" value="spanish ladies">
+                                Spanish Ladies
+                                <button type="button" class="play-sound" data-sound="spanish ladies"><img src="res/play-button.png" alt="play"></button>
+                                <button type="button" class="stop-sound" data-sound="spanish ladies"><img src="res/stop-button.png" alt="stop"></button>
+                            </label>
+                        </div>
+                        
+
+                        <!-- <label for="sound1">Cholerny sztorm: </label>
+                        <input type="radio" name="sound" id="sztorm" value="Cholerny Sztorm" checked="checked"> <br>
+                        <label for="sound2">Bitwa:</label>
+                        <input type="radio" name="sound" id="bitwa" value="Bitwa"> <br>
+                        <label for="sound3">Bones in the Ocean:</label>
+                        <input type="radio" name="sound" id="bones" value="Bones in the Ocean"> <br> -->
+                        <!-- <label for="sound4">szanty1:</label>
+                        <input type="radio" name="sound" id="sound4"> <br>
+                        <label for="sound5">szanty1:</label>
+                        <input type="radio" name="sound" id="sound5"> <br> -->
+                    </form>
+                </div>
+                <button id="add-alarm" class="btn btn-dark">Add alarm</button>
+            </div>
+            
+            <div id="stop-alarm">
+                <img src="res/stop-alarm.png" alt="">
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
